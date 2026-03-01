@@ -1,20 +1,33 @@
-<table class="table table-sm" role="table">
-  <thead>
-    <tr>
-      <th style="width: 10px" scope="col">#</th>
-      <th scope="col">Nombre</th>
-      <th scope="col">Saldo</th>
-      <th style="width: 40px" scope="col">Acción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="align-middle">
-      <td>1.</td>
-      <td>Pedro Martinez</td>
-      <td>263.33</td>
-      <td>
-        <a class="btn btn-warning">Editar</a>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<div class="position-relative" style="min-height: 400px">
+  <table class="table table-sm" role="table">
+    <thead>
+      <tr>
+        <th style="width: 10px" scope="col">#</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Saldo</th>
+        <th style="width: 40px" scope="col">Acción</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (cliente of clientes(); track cliente.id) {
+        <tr class="align-middle">
+          <td>{{ $index + 1 }}</td>
+          <td class="text-capitalize">{{ cliente.nombre }} {{ cliente.apellido }}</td>
+          <td>{{ cliente.saldo }}</td>
+          <td>
+            <button class="btn btn-warning">Editar</button>
+          </td>
+        </tr>
+      }
+    </tbody>
+  </table>
+
+  <!-- Botón flotante circular -->
+  <button
+    class="btn btn-primary rounded-circle floating-btn"
+    (click)="agregarCliente()"
+    title="Agregar Cliente"
+  >
+    <i class="bi bi-plus-lg"></i>
+  </button>
+</div>
