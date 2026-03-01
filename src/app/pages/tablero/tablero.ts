@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { InfoBoxComponent, TInfoBox } from '../../componentes/info-box/info-box';
+import { Clientes } from '../../componentes/clientes/clientes';
 
 @Component({
   selector: 'app-tablero',
-  imports: [InfoBoxComponent],
+  imports: [InfoBoxComponent, Clientes],
   templateUrl: './tablero.html',
   styles: ``,
 })

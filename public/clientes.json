@@ -1,0 +1,20 @@
+[
+  {
+    "nombre": "juan",
+    "apellido": "lopez",
+    "email": "juanlopez@gmail.com",
+    "saldo": 256.33
+  },
+  {
+    "nombre": "emma",
+    "apellido": "stone",
+    "email": "emma@gmail.com",
+    "saldo": 450.0
+  },
+  {
+    "nombre": "mira",
+    "apellido": "susa",
+    "email": "mirasusa@gmail.com",
+    "saldo": 100.23
+  }
+]
