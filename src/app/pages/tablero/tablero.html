@@ -1,0 +1,42 @@
+<button class="btn btn-dark">
+  <i class="bi bi-plus"></i>
+  Agregar cliente
+</button>
+
+<div class="row">
+  <div class="col-12 mt-3">
+    <!-- info-box-content -->
+    <app-info-box [data]="boxClientes" />
+    <app-info-box [data]="boxSaldo" />
+    <!-- /.info-box-content -->
+    <div class="card mb-4">
+      <div class="card-header">
+        <h3 class="card-title">Listado de clientes</h3>
+      </div>
+      <!-- /.card-header -->
+      <div class="card-body p-0">
+        <table class="table table-sm" role="table">
+          <thead>
+            <tr>
+              <th style="width: 10px" scope="col">#</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">Saldo</th>
+              <th style="width: 40px" scope="col">Acción</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="align-middle">
+              <td>1.</td>
+              <td>Pedro Martinez</td>
+              <td>263.33</td>
+              <td>
+                <a class="btn btn-warning">Editar</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- /.card-body -->
+    </div>
+  </div>
+</div>
